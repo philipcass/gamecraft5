@@ -47,8 +47,9 @@ public class VoterController : MonoBehaviour {
 					if ( offsetDistance < proximityDistance ) // close enough
 						state = VoterState.Idle; 
 					else // keep going
-						transform.position = Vector2.Lerp(transform.position, heading, Time.deltaTime*speed);
+						transform.position = (offset.normalized * Time.deltaTime * speed) + transform.position;
 					
+					yield return new WaitForSeconds(0.01f);
 				break;
 					
 				case VoterState.Cheering:
@@ -76,6 +77,7 @@ public class VoterController : MonoBehaviour {
 		newPoint.y = boxPos.y-(size.y/2) + y;
 		return (newPoint);
 	}
+
 
 	void OnTriggerEnter2D(Collider2D other) {
 		if( other.gameObject.tag == "Leader" )
