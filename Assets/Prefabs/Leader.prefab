@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 58: {fileID: 5800000}
   - 212: {fileID: 21200000}
+  - 212: {fileID: 21200002}
   m_Layer: 0
   m_Name: Leader
   m_TagString: Leader
@@ -66,6 +67,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
   Allegiance: 3
+  BaseSpace: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,6 +82,29 @@ MonoBehaviour:
   speed: 12
   player: 1
 --- !u!212 &21200000
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_LightmapIndex: 255
+  m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_LightProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_SortingLayer: 1
+  m_SortingOrder: 0
+  m_SortingLayerID: 710462059
+  m_Sprite: {fileID: 21300000, guid: 8758d120f88de444bb54c764b382f306, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+--- !u!212 &21200002
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
