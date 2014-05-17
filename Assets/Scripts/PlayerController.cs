@@ -17,8 +17,7 @@ public class PlayerController : MonoBehaviour
 		XAxis = "L_XAxis_" + player;
 		YAxis = "L_YAxis_" + player;
 		Shout = "A_" + player;
-		influence = this.GetComponentInChildren<CircleCollider2D> ();
-		influence.gameObject.SetActive (false);
+		influence = this.GetComponent<CircleCollider2D> ();
 	}
 	
 	// UPDATE is called once per frame
@@ -37,9 +36,9 @@ public class PlayerController : MonoBehaviour
 	bool isInfluencing = false;
 	IEnumerator Influence(){
 		isInfluencing = true;
-		influence.gameObject.SetActive (true);
+		influence.enabled = true;
 		yield return new WaitForSeconds(0.1f);
 		isInfluencing = false;
-		influence.gameObject.SetActive (false);
+		influence.enabled = false;
 	}
 }
