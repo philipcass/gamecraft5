@@ -8,3 +8,10 @@ public enum Allegiance{
 	Theocracy,
 	Facism
 }
+
+public enum VoterState{
+	Idle,
+	Heading,
+	Cheering
+
+}
