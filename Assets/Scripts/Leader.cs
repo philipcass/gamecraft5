@@ -9,7 +9,10 @@ public class Leader : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		this.GetComponent<SpriteRenderer> ().sprite = conf.Sprite [Array.IndexOf (conf.Allegiance, myAllegiance)];
+		if(GameObject.Find ("Settings") != null){
+			Allegiance = GameObject.Find ("Settings").GetComponent<Settings> ().playerAllegiances [this.GetComponent<PlayerController> ().player];
+		}
+		this.GetComponent<SpriteRenderer> ().sprite = conf.Sprite [Array.IndexOf (conf.Allegiance, Allegiance)];
 
 		foreach (GameObject go in GameObject.FindGameObjectsWithTag ("Base")) {
 			BaseController bc = go.GetComponent<BaseController>();
