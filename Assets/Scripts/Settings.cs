@@ -15,3 +15,15 @@ public enum VoterState{
 	Cheering
 
 }
+
+
+public class Settings:MonoBehaviour{
+	public Allegiance[] playerAllegiances;
+
+	void Awake(){
+		DontDestroyOnLoad (this);
+	}
+	void Start(){
+		playerAllegiances = new Allegiance[4];
+	}
+}
