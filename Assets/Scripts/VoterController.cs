@@ -63,12 +63,29 @@ public class VoterController : MonoBehaviour {
 		return (newPoint);
 	}
 
-	void OnTriggerEnter(Collider other) {
-
-     	if( other.tag == "Leader" )
-		{
-			other.gameObject.GetComponent<Leader>().BaseSpace;
-		}
-
+	Vector2 pointInsideBox(Vector2 boxPos, Vector2 size)
+	{
+		Vector2 newPoint;
+		float x = Random.Range (0.0F, size.x);
+		float y = Random.Range (0.0F, size.y);
+		newPoint.x = boxPos.x-(size.x/2) + x;
+		newPoint.y = boxPos.y-(size.y/2) + y;
+		return (newPoint);
 	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		if( other.gameObject.tag == "Leader" )
+		{
+
+			BaseController baseController = other.gameObject.GetComponent<Leader>().BaseSpace;
+
+			heading = pointInsideBox (
+					new Vector2(base.transform.position.x,base.transform.position.y) , 
+                	baseController.GetComponent<BoxCollider2D>().size
+                );
+			state = VoterState.Heading;
+
+		}
+		
+    }
 }
