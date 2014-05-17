@@ -29,8 +29,6 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetButtonDown (Shout) && !isInfluencing) {
 			StartCoroutine (Influence ());
 		}
-
-
 	}
 
 	bool isInfluencing = false;
@@ -41,4 +39,5 @@ public class PlayerController : MonoBehaviour
 		isInfluencing = false;
 		influence.enabled = false;
 	}
+
 }
