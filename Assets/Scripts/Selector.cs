@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Selector : MonoBehaviour {
 	public SelectorElement[] Elements;
-	public GUIText[];
+	public GUIText[] playerPos;
 
 	// Use this for initialization
 	void Start () {
