@@ -63,6 +63,10 @@ TagManager:
     userID: 1
     uniqueID: 710462059
     locked: 0
+  - name: buildings
+    userID: 6
+    uniqueID: 2744459271
+    locked: 0
   - name: GUI
     userID: 2
     uniqueID: 4077414189
