@@ -99,8 +99,8 @@ MonoBehaviour:
   minWait: .5
   maxWait: 3
   state: 0
-  speed: 12
-  proximityDistance: .00999999978
+  speed: .00100000005
+  proximityDistance: .100000001
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

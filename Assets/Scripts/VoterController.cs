@@ -26,16 +26,16 @@ public class VoterController : MonoBehaviour {
 			{
 				case VoterState.Idle:
 
-					//random wait
-					float waitFor = Random.Range (minWait,maxWait);
-					
+                    //random movement
+                    heading = pointInsideCircle (
+                        new Vector2(transform.position.x,transform.position.y) , 
+                        GetComponent<CircleCollider2D>().radius 
+                        );
+
+                    //random
+                    float waitFor = Random.Range (minWait,maxWait);
 					yield return new WaitForSeconds(waitFor);
 
-					//random movement
-					heading = pointInsideCircle (
-														new Vector2(transform.position.x,transform.position.y) , 
-														GetComponent<CircleCollider2D>().radius 
-					                                    );
 					state = VoterState.Heading;
 				break;
 					
@@ -44,10 +44,10 @@ public class VoterController : MonoBehaviour {
 					Vector3 offset = heading - transform.position;
 					float offsetDistance = offset.magnitude;
 		
-					if (offsetDistance < proximityDistance ) // close enough
+					if ( offsetDistance < proximityDistance ) // close enough
 						state = VoterState.Idle; 
 					else // keep going
-						transform.position = Vector3.Lerp(transform.position, heading, Time.deltaTime*speed);
+						transform.position = Vector2.Lerp(transform.position, heading, Time.deltaTime*speed);
 					
 				break;
 					
@@ -68,7 +68,7 @@ public class VoterController : MonoBehaviour {
 	}
 
 	Vector2 pointInsideBox(Vector2 boxPos, Vector2 size)
-	{
+	{	
 		Vector2 newPoint;
 		float x = Random.Range (0.0F, size.x);
 		float y = Random.Range (0.0F, size.y);
@@ -84,7 +84,7 @@ public class VoterController : MonoBehaviour {
 
 			heading = pointInsideBox (
                 	new Vector2(baseController.transform.position.x,baseController.transform.position.y), 
-                	baseController.GetComponent<BoxCollider2D>().size
+                	baseController.GetComponent<Renderer>().bounds.size
                 );
 			state = VoterState.Heading;
 

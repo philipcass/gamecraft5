@@ -514,7 +514,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb7511f9713af74180aa8b6d1067973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voterCount: 1
+  voterCount: 250
   voterPrefab: {fileID: 11400002, guid: e734e05d75c542845b43493cc8c42737, type: 2}
 --- !u!4 &1058108189
 Transform:
@@ -618,6 +618,10 @@ Prefab:
     - target: {fileID: 6100000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
@@ -1205,7 +1209,7 @@ Renderer:
     type: 2}
   m_PrefabInternal: {fileID: 1248937786}
   m_GameObject: {fileID: 2048145682}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_LightmapIndex: 255
