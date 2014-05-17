@@ -18,6 +18,7 @@ public class Leader : MonoBehaviour {
 			BaseController bc = go.GetComponent<BaseController>();
 			if(this.myAllegiance == bc.Allegiance){
 				this.BaseSpace = bc;
+				transform.position = bc.transform.position;
 			}
 		}
 	}

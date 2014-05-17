@@ -35,9 +35,10 @@ public class PlayerController : MonoBehaviour
 	IEnumerator Influence(){
 		isInfluencing = true;
 		influence.enabled = true;
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0.001f);
 		isInfluencing = false;
 		influence.enabled = false;
+
 	}
 
 }

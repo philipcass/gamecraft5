@@ -16,6 +16,7 @@ public class VoterController : MonoBehaviour {
 	public float allegianceDecValue =.5f;
 	public float allegianceThreshold = 50f;
 
+	public ParticleController pc;
 
 	public Dictionary<Allegiance,float> allegiances;
 
@@ -100,7 +101,8 @@ public class VoterController : MonoBehaviour {
 			if (allegiance == allegianceIn)
 				allegiances[allegiance] = allegiances[allegiance] + allegianceIncValue;
 			else
-				allegiances[allegiance] = allegiances[allegiance] - allegianceDecValue;
+				allegiances[allegiance] = allegiances[allegiance] - allegianceDecValue ;
+			Mathf.Clamp(allegiances[allegiance], 0f, 100f);
 		}
 
         if ( allegiances[allegianceIn] > allegianceThreshold )
@@ -119,7 +121,8 @@ public class VoterController : MonoBehaviour {
 			BaseController baseController = leader.BaseSpace;
 
 			if ( handleAllegiance(leader.myAllegiance) != null )
-			{            
+			{           
+				pc.trigger(leader.myAllegiance);
             	heading = pointInsideBox (
                 		new Vector2(baseController.transform.position.x,baseController.transform.position.y), 
                 		baseController.GetComponent<Renderer>().bounds.size
