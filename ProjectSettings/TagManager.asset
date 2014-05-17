@@ -59,6 +59,10 @@ TagManager:
     userID: 5
     uniqueID: 2828175359
     locked: 0
+  - name: Glow
+    userID: 6
+    uniqueID: 1756183973
+    locked: 0
   - name: Leaders
     userID: 1
     uniqueID: 710462059
