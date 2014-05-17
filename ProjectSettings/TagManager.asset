@@ -14,9 +14,9 @@ TagManager:
   Builtin Layer 5: 
   Builtin Layer 6: 
   Builtin Layer 7: 
-  User Layer 8: 
-  User Layer 9: 
-  User Layer 10: 
+  User Layer 8: Dirt
+  User Layer 9: Grass
+  User Layer 10: Cobblestone
   User Layer 11: 
   User Layer 12: 
   User Layer 13: 
@@ -42,6 +42,22 @@ TagManager:
   - name: Default
     userID: 0
     uniqueID: 0
+    locked: 0
+  - name: Dirt
+    userID: 2
+    uniqueID: 2902653699
+    locked: 0
+  - name: Grass
+    userID: 3
+    uniqueID: 4279079807
+    locked: 0
+  - name: Cobblestone
+    userID: 4
+    uniqueID: 1513697949
+    locked: 0
+  - name: Fog
+    userID: 5
+    uniqueID: 2828175359
     locked: 0
   - name: Leaders
     userID: 1
