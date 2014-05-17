@@ -5,7 +5,7 @@ using System;
 public class Leader : MonoBehaviour {
 	public LeaderConfig conf;
 	public Allegiance Allegiance;
-	public GameObject BaseSpace;
+	public BaseController BaseSpace;
 
 	// Use this for initialization
 	void Start () {
