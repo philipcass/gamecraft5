@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 
+
 public class VoterController : MonoBehaviour {
 
 	public float minWait = .5f;
@@ -11,7 +12,12 @@ public class VoterController : MonoBehaviour {
 	public float speed = 2f;
 	public float proximityDistance=.01f;
 
-	public Dictionary<VoterState,float> alligence;
+	public float allegianceIncValue =1f;
+	public float allegianceDecValue =.5f;
+	public float allegianceThreshold = 50f;
+
+
+	public Dictionary<Allegiance,float> allegiances;
 
 	private VoterState previousState;
 	private Vector3 heading;
@@ -20,6 +26,14 @@ public class VoterController : MonoBehaviour {
 	
 	// Update is called once per frame
 	IEnumerator Start () {
+		allegiances = new Dictionary<Allegiance, float>();
+		allegiances.Add( Allegiance.Anarchism,0);
+		allegiances.Add( Allegiance.Capitalism,0);
+		allegiances.Add( Allegiance.Communism,0);
+		allegiances.Add( Allegiance.Theocracy,0);
+		allegiances.Add( Allegiance.Facism,0);
+
+
 		while (true)
 		{
 			switch (state)
@@ -78,19 +92,41 @@ public class VoterController : MonoBehaviour {
 		return (newPoint);
 	}
 
+	Allegiance? handleAllegiance (Allegiance allegianceIn)
+	{
+		List<Allegiance> allegianceKeys = new List<Allegiance>(allegiances.Keys);
+		foreach(Allegiance allegiance in allegianceKeys )
+		{
+			if (allegiance == allegianceIn)
+				allegiances[allegiance] = allegiances[allegiance] + allegianceIncValue;
+			else
+				allegiances[allegiance] = allegiances[allegiance] - allegianceDecValue;
+		}
 
+        if ( allegiances[allegianceIn] > allegianceThreshold )
+			return allegianceIn;
+		else 
+			return null;
+
+		
+     }
+            
 	void OnTriggerEnter2D(Collider2D other) {
+
 		if( other.gameObject.tag == "Leader" )
 		{
-			BaseController baseController = other.gameObject.GetComponent<Leader>().BaseSpace;
+			Leader leader = other.gameObject.GetComponent<Leader>();
+			BaseController baseController = leader.BaseSpace;
 
-			heading = pointInsideBox (
-                	new Vector2(baseController.transform.position.x,baseController.transform.position.y), 
-                	baseController.GetComponent<Renderer>().bounds.size
-                );
-			state = VoterState.Heading;
-
+			if ( handleAllegiance(leader.myAllegiance) != null )
+			{            
+            	heading = pointInsideBox (
+                		new Vector2(baseController.transform.position.x,baseController.transform.position.y), 
+                		baseController.GetComponent<Renderer>().bounds.size
+                	);
+				state = VoterState.Heading;
+			}
 		}
-		
+
     }
 }

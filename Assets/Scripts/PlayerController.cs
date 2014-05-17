@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour 
 {	
 	public float speed = 12;
-	public int player = 1;
+	public int player;
 
 	string XAxis;
 	string YAxis;
