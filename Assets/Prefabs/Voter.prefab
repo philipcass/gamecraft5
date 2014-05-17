@@ -30,6 +30,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 199: {fileID: 19900000}
   - 198: {fileID: 19800000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: Particles
   m_TagString: Untagged
@@ -114,6 +115,17 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .300000012
   m_Center: {x: 0, y: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f11b207d85df32446bc734de09dd6b8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -133,7 +145,7 @@ MonoBehaviour:
   allegianceIncValue: 1
   allegianceDecValue: .5
   allegianceThreshold: 0
-  pc: {fileID: 0}
+  pc: {fileID: 11400000}
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -396,7 +408,7 @@ ParticleSystem:
     enabled: 1
     m_Type: 0
     rate:
-      scalar: 10
+      scalar: 0
       maxCurve:
         serializedVersion: 2
         m_Curve:
