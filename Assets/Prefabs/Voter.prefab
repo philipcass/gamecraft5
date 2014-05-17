@@ -10,7 +10,6 @@ GameObject:
   - 4: {fileID: 400000}
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
-  - 114: {fileID: 11400000}
   - 58: {fileID: 5800000}
   - 114: {fileID: 11400002}
   - 50: {fileID: 5000000}
@@ -86,18 +85,6 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_Radius: .300000012
   m_Center: {x: 0, y: 0}
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bcf1a263303aca44807f2cc8e195968, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Allegiance: 0
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -112,7 +99,7 @@ MonoBehaviour:
   minWait: .5
   maxWait: 3
   state: 0
-  speed: 2
+  speed: 12
   proximityDistance: .00999999978
 --- !u!1001 &100100000
 Prefab:

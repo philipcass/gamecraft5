@@ -5,9 +5,7 @@ public class VoterManager : MonoBehaviour {
 
 	public float voterCount = 100;
 	public VoterController voterPrefab;
-	public VoterState state;
 
-	private VoterState previousState;
 
 	// Use this for initialization
 	void Start () {
@@ -30,25 +28,9 @@ public class VoterManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		switch (state)
-		{
-			case VoterState.Idle:
-				
-			break;
-
-			case VoterState.Heading:
-				
-			break;
-
-			case VoterState.Cheering:
-				
-			break;
-		}
 
 
 	}
-
-
 
 	Vector2 pointInsideCircle(Vector2 circlePos, float radiusIn){
 		Vector2 newPoint;
