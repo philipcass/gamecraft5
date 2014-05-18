@@ -15,7 +15,7 @@ public class GameController : MonoBehaviour {
 			timerText.text = ""+LevelTimer--;
 			if (LevelTimer == 0)
 			{	
-				Application.LoadLevel ("GameOver");
+				Application.LoadLevel ("Score");
 			}
 		}
 

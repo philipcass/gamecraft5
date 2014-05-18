@@ -12,6 +12,14 @@ public class Scorebar : MonoBehaviour {
 	void Start () {
 		p = this.transform.position;
 		this.GetComponentInChildren<BannerSelector> ().SetBanner (conf.CrestSprite[Array.IndexOf(conf.Allegiance, this.myAllegiance)]);
+
+		VoterManager vm = FindObjectOfType<VoterManager>();
+		float totalVoters = vm.transform.childCount;
+		foreach(Transform child in vm.transform)
+		{
+			VoterController voter = child.gameObject.GetComponent<VoterController>();
+			percentage = voter.allegiances[myAllegiance] / totalVoters;
+		}
 	}
 	
 	// Update is called once per frame

@@ -38,10 +38,19 @@ public class PlayerController : MonoBehaviour
 		float y = -Input.GetAxis(YAxis) * Time.smoothDeltaTime * speed;
 		transform.Translate(x,y,0,Space.Self);
 		if(x+y!=0){
-			//_animator.Play (Animator.StringToHash(_walkani));
-		}else{
-			//_animator.Play (Animator.StringToHash(_idleani));
+			_animator.Play (Animator.StringToHash(_walkani));
+		} 
+		else{
+			_animator.Play (Animator.StringToHash(_idleani));
 		}
+
+		if (x > 0 && this.transform.localScale.x < 0){
+			this.transform.localScale = new Vector3(-this.transform.localScale.x, this.transform.localScale.y,this.transform.localScale.z);
+		}
+		else if (x<0 && this.transform.localScale.x > 0) {
+			this.transform.localScale = new Vector3(-this.transform.localScale.x, this.transform.localScale.y,this.transform.localScale.z);
+		}
+
 		if (Input.GetButtonDown (Shout) && !isInfluencing && leaderController.power > leaderController.powerUse) {
 			StartCoroutine (Influence ());
 		}
