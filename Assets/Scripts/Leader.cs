@@ -17,10 +17,11 @@ public class Leader : MonoBehaviour {
 		ui = this.GetComponent<UIController> ();
 
 		if(GameObject.Find ("Settings") != null){
-			myAllegiance = GameObject.Find ("Settings").GetComponent<Settings> ().playerAllegiances [this.GetComponent<PlayerController> ().player];
+			myAllegiance = GameObject.Find ("Settings").GetComponent<Settings> ().playerAllegiances [this.GetComponent<PlayerController> ().player-1];
+			Debug.Log(string.Format("{0}_{1}", this.GetComponent<PlayerController> ().player,myAllegiance));
 		}
 		this.GetComponent<SpriteRenderer> ().sprite = conf.Sprite [Array.IndexOf (conf.Allegiance, myAllegiance)];
-
+		this.GetComponent<PlayerController> ().startAnimation ();
 		this.BaseSpace.setAllegiance(this.myAllegiance);
 		this.transform.position = this.BaseSpace.transform.position;
 	}

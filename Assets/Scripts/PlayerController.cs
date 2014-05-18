@@ -27,6 +27,9 @@ public class PlayerController : MonoBehaviour
 		YAxis = "L_YAxis_" + player;
 		Shout = "A_" + player;
 		influence = this.GetComponent<CircleCollider2D> ();
+	}
+
+	public void startAnimation(){
 		selectanimations ();
 		_animator.Play (Animator.StringToHash(_idleani));
 	}
