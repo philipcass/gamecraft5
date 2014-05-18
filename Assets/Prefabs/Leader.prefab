@@ -84,7 +84,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 12
-  player: 2
+  player: 1
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1

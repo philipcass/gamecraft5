@@ -21,13 +21,7 @@ public class Leader : MonoBehaviour {
 		}
 		this.GetComponent<SpriteRenderer> ().sprite = conf.Sprite [Array.IndexOf (conf.Allegiance, myAllegiance)];
 
-		foreach (GameObject go in GameObject.FindGameObjectsWithTag ("Base")) {
-			BaseController bc = go.GetComponent<BaseController>();
-			if(this.myAllegiance == bc.Allegiance){
-				this.BaseSpace = bc;
-				transform.position = bc.transform.position;
-			}
-		}
+		this.BaseSpace.Allegiance = this.myAllegiance;
 	}
 	
 	// Update is called once per frame
