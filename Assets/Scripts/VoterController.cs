@@ -24,18 +24,21 @@ public class VoterController : MonoBehaviour {
 	private Vector3 heading;
 
 
-	
+
+
 	// Update is called once per frame
 	IEnumerator Start () {
-		allegiances = new Dictionary<Allegiance, float>();
-		allegiances.Add( Allegiance.Anarchism,0);
-		allegiances.Add( Allegiance.Capitalism,0);
-		allegiances.Add( Allegiance.Communism,0);
-		allegiances.Add( Allegiance.Theocracy,0);
-		allegiances.Add( Allegiance.Facism,0);
+		if (allegiances == null)
+		{
+			allegiances = new Dictionary<Allegiance, float>();
+			allegiances.Add( Allegiance.Anarchism,0);
+			allegiances.Add( Allegiance.Capitalism,0);
+			allegiances.Add( Allegiance.Communism,0);
+			allegiances.Add( Allegiance.Theocracy,0);
+			allegiances.Add( Allegiance.Facism,0);
+		}
 
-
-		while (true)
+        while (true)
 		{
 			switch (state)
 			{
@@ -65,7 +68,7 @@ public class VoterController : MonoBehaviour {
 					else // keep going
 						transform.position = targetPosition;
 					
-					yield return new WaitForSeconds(2);
+					yield return new WaitForSeconds(0.01f);
 				break;
 					
 				case VoterState.Cheering:

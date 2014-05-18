@@ -9,6 +9,8 @@ public class VoterManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		DontDestroyOnLoad(this);
+
 		if (voterPrefab)
 		{
 			for (int i = 0 ; i < voterCount ; i++)

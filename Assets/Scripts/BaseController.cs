@@ -15,4 +15,9 @@ public class BaseController : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	public void setAllegiance(Allegiance a){
+		this.Allegiance = a;
+		this.GetComponentInChildren<BannerSelector> ().SetBanner (conf.CrestSprite[Array.IndexOf(conf.Allegiance, this.Allegiance)]);
+	}
 }
