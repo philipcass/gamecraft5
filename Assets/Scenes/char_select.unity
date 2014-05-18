@@ -121,7 +121,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_SortingLayerID: 710462059
   m_Sprite: {fileID: 21300000, guid: 8758d120f88de444bb54c764b382f306, type: 3}
@@ -244,7 +244,7 @@ Transform:
   m_GameObject: {fileID: 795101399}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .330000013, y: .330000013, z: .330000013}
   m_Children: []
   m_Father: {fileID: 1794111860}
 --- !u!102 &795101401
@@ -261,7 +261,7 @@ TextMesh:
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -297,7 +297,7 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 3
   m_SortingLayerID: 710462059
 --- !u!1 &896865298
@@ -427,7 +427,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_SortingLayerID: 710462059
   m_Sprite: {fileID: 21300004, guid: 8758d120f88de444bb54c764b382f306, type: 3}
@@ -490,7 +490,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 1
   m_SortingLayerID: 710462059
   m_Sprite: {fileID: 21300002, guid: 8758d120f88de444bb54c764b382f306, type: 3}
@@ -553,7 +553,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_SortingLayerID: 710462059
   m_Sprite: {fileID: 21300006, guid: 8758d120f88de444bb54c764b382f306, type: 3}
@@ -616,7 +616,7 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_SortingLayerID: 710462059
   m_Sprite: {fileID: 21300008, guid: 8758d120f88de444bb54c764b382f306, type: 3}
@@ -658,7 +658,7 @@ Transform:
   m_GameObject: {fileID: 1574841439}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .330000013, y: .330000013, z: .330000013}
   m_Children: []
   m_Father: {fileID: 1794111860}
 --- !u!114 &1574841441
@@ -686,7 +686,7 @@ TextMesh:
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -711,7 +711,7 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 3
   m_SortingLayerID: 710462059
 --- !u!1 &1653102278
@@ -740,7 +740,7 @@ Transform:
   m_GameObject: {fileID: 1653102278}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .330000013, y: .330000013, z: .330000013}
   m_Children: []
   m_Father: {fileID: 1794111860}
 --- !u!114 &1653102280
@@ -768,7 +768,7 @@ TextMesh:
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -793,7 +793,7 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 3
   m_SortingLayerID: 710462059
 --- !u!1 &1794111859
@@ -908,7 +908,7 @@ TextMesh:
   m_Anchor: 4
   m_Alignment: 1
   m_TabSize: 4
-  m_FontSize: 0
+  m_FontSize: 30
   m_FontStyle: 0
   m_RichText: 1
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -933,7 +933,7 @@ Renderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 1
+  m_SortingLayer: 7
   m_SortingOrder: 3
   m_SortingLayerID: 710462059
 --- !u!4 &1944712637
@@ -944,6 +944,6 @@ Transform:
   m_GameObject: {fileID: 1944712633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: .330000013, y: .330000013, z: .330000013}
   m_Children: []
   m_Father: {fileID: 1794111860}
