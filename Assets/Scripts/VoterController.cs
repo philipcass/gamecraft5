@@ -21,7 +21,7 @@ public class VoterController : MonoBehaviour {
 	public Dictionary<Allegiance,float> allegiances;
 
 	private VoterState previousState;
-	private Vector3 heading;
+	public Vector3 heading;
 
 
 	
@@ -63,9 +63,10 @@ public class VoterController : MonoBehaviour {
 						state = VoterState.Idle; 
 					else // keep going
 						transform.position = (offset.normalized * Time.deltaTime * speed) + transform.position;
-					
+                    
 					yield return new WaitForSeconds(0.01f);
-				break;
+                    
+                    break;
 					
 				case VoterState.Cheering:
 					
