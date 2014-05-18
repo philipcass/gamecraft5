@@ -22,6 +22,7 @@ public class Leader : MonoBehaviour {
 		this.GetComponent<SpriteRenderer> ().sprite = conf.Sprite [Array.IndexOf (conf.Allegiance, myAllegiance)];
 
 		this.BaseSpace.Allegiance = this.myAllegiance;
+		this.transform.position = this.BaseSpace.transform.position;
 	}
 	
 	// Update is called once per frame
@@ -29,6 +30,9 @@ public class Leader : MonoBehaviour {
 		power += Time.deltaTime * powerGain;
 		power = Mathf.Clamp (power, 0, 1);
 		ui.progress = power;
+		if (this.BaseSpace.renderer.bounds.Contains (this.transform.position)) {
+			power += Time.deltaTime * 50;
+		}
 	}
 
 
