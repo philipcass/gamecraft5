@@ -3006,7 +3006,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
   myAllegiance: 2
-  BaseSpace: {fileID: 2048145683}
+  BaseSpace: {fileID: 1507066425}
   ui: {fileID: 0}
   power: 0
   powerUse: .100000001
@@ -6789,7 +6789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
   myAllegiance: 0
-  BaseSpace: {fileID: 1507066425}
+  BaseSpace: {fileID: 1515118265}
   ui: {fileID: 0}
   power: 0
   powerUse: .100000001
@@ -11820,7 +11820,7 @@ Prefab:
     - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: BaseSpace
       value: 
-      objectReference: {fileID: 974977534}
+      objectReference: {fileID: 2048145683}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: left
       value: 1
@@ -20116,7 +20116,7 @@ Prefab:
     - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: BaseSpace
       value: 
-      objectReference: {fileID: 1515118265}
+      objectReference: {fileID: 974977534}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: left
       value: 0
@@ -22911,7 +22911,7 @@ Prefab:
     - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: BaseSpace
       value: 
-      objectReference: {fileID: 1507066425}
+      objectReference: {fileID: 1515118265}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: left
       value: 1
@@ -32640,7 +32640,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
   myAllegiance: 4
-  BaseSpace: {fileID: 974977534}
+  BaseSpace: {fileID: 2048145683}
   ui: {fileID: 0}
   power: 0
   powerUse: .100000001
@@ -33481,7 +33481,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
   myAllegiance: 3
-  BaseSpace: {fileID: 1515118265}
+  BaseSpace: {fileID: 974977534}
   ui: {fileID: 0}
   power: 0
   powerUse: .100000001
@@ -33987,7 +33987,7 @@ Prefab:
     - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: BaseSpace
       value: 
-      objectReference: {fileID: 2048145683}
+      objectReference: {fileID: 1507066425}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: left
       value: 0
