@@ -10,15 +10,14 @@ public class GameController : MonoBehaviour {
 
 	public Dictionary<Allegiance,float> allegiances;
 
-
+	void OnAwake()
+	{
+		print (Application.loadedLevelName);
+	}
 
 	// Use this for initialization
 	IEnumerator Start () {
-		if (Application.loadedLevelName == "score")
-			guiText.enabled = false;
-        else
-		{
-        
+
         	DontDestroyOnLoad(this);
 			while (true)
 			{
@@ -30,12 +29,12 @@ public class GameController : MonoBehaviour {
 					Application.LoadLevel ("Score");
 				}
 			}
-		}
+
     }
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	void SaveScores() {
