@@ -10701,9 +10701,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 5
-  m_SortingLayerID: 2744459271
+  m_SortingLayerID: 3019703089
   m_Sprite: {fileID: 21300000, guid: b0e26bc1d1364454b8f22f0ef8d3f6a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &650389623
@@ -10842,6 +10842,22 @@ Prefab:
     - target: {fileID: 400000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
       propertyPath: m_LocalRotation.w
       value: -4.37113883e-08
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 3019703089
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 3019703089
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
@@ -11048,9 +11064,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 5
-  m_SortingLayerID: 2744459271
+  m_SortingLayerID: 3019703089
   m_Sprite: {fileID: 21300000, guid: b0e26bc1d1364454b8f22f0ef8d3f6a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &666401767
@@ -11916,9 +11932,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 6
-  m_SortingLayerID: 2744459271
+  m_SortingLayerID: 3019703089
   m_Sprite: {fileID: 21300012, guid: ae34da94f314d2f4682b9077b731cc80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &713549460
@@ -13593,9 +13609,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 6
-  m_SortingLayerID: 2744459271
+  m_SortingLayerID: 3019703089
   m_Sprite: {fileID: 21300012, guid: ae34da94f314d2f4682b9077b731cc80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &805876500
@@ -17648,7 +17664,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb7511f9713af74180aa8b6d1067973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voterCount: 250
+  voterCount: 200
   voterPrefab: {fileID: 11400002, guid: e734e05d75c542845b43493cc8c42737, type: 2}
 --- !u!4 &1058108189
 Transform:
@@ -18512,6 +18528,22 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 3019703089
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 3019703089
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
   m_RootGameObject: {fileID: 1515118264}
@@ -18717,9 +18749,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 5
-  m_SortingLayerID: 2744459271
+  m_SortingLayerID: 3019703089
   m_Sprite: {fileID: 21300000, guid: b0e26bc1d1364454b8f22f0ef8d3f6a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1137388315
@@ -20910,6 +20942,22 @@ Prefab:
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 3019703089
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 3019703089
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
   m_RootGameObject: {fileID: 2048145682}
@@ -21412,6 +21460,22 @@ Prefab:
     - target: {fileID: 11400000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
       propertyPath: Allegiance
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 3019703089
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayer
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 21200004, guid: a3b02284febdac5458a3838bcd497034, type: 2}
+      propertyPath: m_SortingLayerID
+      value: 3019703089
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3b02284febdac5458a3838bcd497034, type: 2}
@@ -23311,9 +23375,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 5
-  m_SortingLayerID: 2744459271
+  m_SortingLayerID: 3019703089
   m_Sprite: {fileID: 21300000, guid: b0e26bc1d1364454b8f22f0ef8d3f6a2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1430831574
@@ -25596,9 +25660,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 6
-  m_SortingLayerID: 2744459271
+  m_SortingLayerID: 3019703089
   m_Sprite: {fileID: 21300012, guid: ae34da94f314d2f4682b9077b731cc80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &1608668746
@@ -35323,9 +35387,9 @@ SpriteRenderer:
   m_UseLightProbes: 0
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
-  m_SortingLayer: 6
+  m_SortingLayer: 8
   m_SortingOrder: 6
-  m_SortingLayerID: 2744459271
+  m_SortingLayerID: 3019703089
   m_Sprite: {fileID: 21300012, guid: ae34da94f314d2f4682b9077b731cc80, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2140128058

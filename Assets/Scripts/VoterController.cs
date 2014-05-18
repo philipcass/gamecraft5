@@ -65,7 +65,7 @@ public class VoterController : MonoBehaviour {
 					else // keep going
 						transform.position = targetPosition;
 					
-					yield return new WaitForSeconds(Random.Range (0.03f,0.05f));
+					yield return new WaitForSeconds(Random.Range (0.03f,0.08f));
 				break;
 					
 				case VoterState.Cheering:
@@ -78,7 +78,7 @@ public class VoterController : MonoBehaviour {
 	Vector2 pointInsideCircle(Vector2 circlePos, float radiusIn){
 		Vector2 newPoint;
 		float angle = Random.Range(0.0F, 1.0F) * (Mathf.PI * 2);
-		float radius = Random.Range(0.8F, 1.0F) * radiusIn;
+		float radius = Random.Range(0.1F, 1.0F) * radiusIn;
 		newPoint.x = circlePos.x + radius * Mathf.Cos(angle);
 		newPoint.y = circlePos.y + radius * Mathf.Sin(angle);
 		return (newPoint);

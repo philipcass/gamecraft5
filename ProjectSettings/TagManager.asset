@@ -17,7 +17,7 @@ TagManager:
   User Layer 8: Dirt
   User Layer 9: Grass
   User Layer 10: Cobblestone
-  User Layer 11: 
+  User Layer 11: Banner
   User Layer 12: 
   User Layer 13: 
   User Layer 14: 
@@ -70,6 +70,10 @@ TagManager:
   - name: Leaders
     userID: 1
     uniqueID: 710462059
+    locked: 0
+  - name: Banner
+    userID: 7
+    uniqueID: 3019703089
     locked: 0
   - name: GUI
     userID: 2
