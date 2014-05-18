@@ -15,23 +15,22 @@ public class GameController : MonoBehaviour {
 	// Use this for initialization
 	IEnumerator Start () {
 		if (Application.loadedLevelName == "score")
-		{
 			guiText.enabled = false;
-        }
-        
-        
-        DontDestroyOnLoad(this);
-		while (true)
+        else
 		{
-			yield return new WaitForSeconds(1f); 
-			timerText.text = ""+LevelTimer--;
-			if (LevelTimer == 0)
-			{	
-				SaveScores();
-				Application.LoadLevel ("Score");
+        
+        	DontDestroyOnLoad(this);
+			while (true)
+			{
+				yield return new WaitForSeconds(1f); 
+				timerText.text = ""+LevelTimer--;
+				if (LevelTimer == 0)
+				{	
+					SaveScores();
+					Application.LoadLevel ("Score");
+				}
 			}
 		}
-
     }
 	
 	// Update is called once per frame

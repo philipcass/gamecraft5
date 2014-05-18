@@ -2940,7 +2940,7 @@ MonoBehaviour:
   pos: {x: 20, y: 40}
   progressBarEmpty: {fileID: 2800000, guid: e38e2c7d4412c5a45a33a1fc2e39922f, type: 3}
   progressBarFull: {fileID: 2800000, guid: c810e9068ac287442b465e0e16ddee2b, type: 3}
-  left: 0
+  left: 1
   bottom: 0
 --- !u!212 &193772642
 SpriteRenderer:
@@ -6833,7 +6833,7 @@ MonoBehaviour:
   pos: {x: 20, y: 40}
   progressBarEmpty: {fileID: 2800000, guid: e38e2c7d4412c5a45a33a1fc2e39922f, type: 3}
   progressBarFull: {fileID: 2800000, guid: c810e9068ac287442b465e0e16ddee2b, type: 3}
-  left: 1
+  left: 0
   bottom: 0
 --- !u!95 &414303974
 Animator:
@@ -7755,7 +7755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 905273879}
-  LevelTimer: 10
+  LevelTimer: 45
 --- !u!1 &470419392
 GameObject:
   m_ObjectHideFlags: 0
@@ -11823,7 +11823,7 @@ Prefab:
       objectReference: {fileID: 2048145683}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: left
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: bottom
@@ -20119,11 +20119,11 @@ Prefab:
       objectReference: {fileID: 974977534}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: left
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: bottom
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 21200002, guid: def23413b144cff499a151ccf24d36d9, type: 2}
@@ -22914,7 +22914,7 @@ Prefab:
       objectReference: {fileID: 1515118265}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: left
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
@@ -32574,7 +32574,7 @@ MonoBehaviour:
   pos: {x: 20, y: 40}
   progressBarEmpty: {fileID: 2800000, guid: e38e2c7d4412c5a45a33a1fc2e39922f, type: 3}
   progressBarFull: {fileID: 2800000, guid: c810e9068ac287442b465e0e16ddee2b, type: 3}
-  left: 1
+  left: 0
   bottom: 1
 --- !u!212 &1982072686
 SpriteRenderer:
@@ -33563,8 +33563,8 @@ MonoBehaviour:
   pos: {x: 20, y: 40}
   progressBarEmpty: {fileID: 2800000, guid: e38e2c7d4412c5a45a33a1fc2e39922f, type: 3}
   progressBarFull: {fileID: 2800000, guid: c810e9068ac287442b465e0e16ddee2b, type: 3}
-  left: 0
-  bottom: 0
+  left: 1
+  bottom: 1
 --- !u!95 &2020181037
 Animator:
   serializedVersion: 2
@@ -33990,7 +33990,7 @@ Prefab:
       objectReference: {fileID: 1507066425}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: left
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: bottom
