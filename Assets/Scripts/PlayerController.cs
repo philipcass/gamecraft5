@@ -30,6 +30,7 @@ public class PlayerController : MonoBehaviour
 	}
 
 	public void startAnimation(){
+		this.leaderController = this.GetComponent<Leader> ();
 		selectanimations ();
 		_animator.Play (Animator.StringToHash(_idleani));
 	}
