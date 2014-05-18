@@ -63,13 +63,13 @@ TagManager:
     userID: 6
     uniqueID: 1756183973
     locked: 0
-  - name: Leaders
-    userID: 1
-    uniqueID: 710462059
-    locked: 0
   - name: buildings
     userID: 6
     uniqueID: 2744459271
+    locked: 0
+  - name: Leaders
+    userID: 1
+    uniqueID: 710462059
     locked: 0
   - name: GUI
     userID: 2

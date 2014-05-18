@@ -58,13 +58,14 @@ public class VoterController : MonoBehaviour {
 
 					Vector3 offset = heading - transform.position;
 					float offsetDistance = offset.magnitude;
-		
+					Vector3 targetPosition = (offset.normalized * Time.deltaTime * speed ) + transform.position;
+
 					if ( offsetDistance < proximityDistance ) // close enough
 						state = VoterState.Idle; 
 					else // keep going
-						transform.position = (offset.normalized * Time.deltaTime * speed) + transform.position;
+						transform.position = targetPosition;
 					
-					yield return new WaitForSeconds(0.01f);
+					yield return new WaitForSeconds(Random.Range (0.03f,0.05f));
 				break;
 					
 				case VoterState.Cheering:
@@ -77,7 +78,7 @@ public class VoterController : MonoBehaviour {
 	Vector2 pointInsideCircle(Vector2 circlePos, float radiusIn){
 		Vector2 newPoint;
 		float angle = Random.Range(0.0F, 1.0F) * (Mathf.PI * 2);
-		float radius = Random.Range(0.0F, 1.0F) * radiusIn;
+		float radius = Random.Range(0.8F, 1.0F) * radiusIn;
 		newPoint.x = circlePos.x + radius * Mathf.Cos(angle);
 		newPoint.y = circlePos.y + radius * Mathf.Sin(angle);
 		return (newPoint);
