@@ -6698,7 +6698,6 @@ GameObject:
   - 33: {fileID: 415315017}
   - 64: {fileID: 415315016}
   - 23: {fileID: 415315015}
-  - 114: {fileID: 415315014}
   m_Layer: 0
   m_Name: FOG
   m_TagString: Untagged
@@ -6717,18 +6716,6 @@ Transform:
   m_LocalScale: {x: 11.1537218, y: 5.5768609, z: 7.24991846}
   m_Children: []
   m_Father: {fileID: 252939161}
---- !u!114 &415315014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: 52b75f7ca312931448b576f094344129,
-    type: 2}
-  m_PrefabInternal: {fileID: 1169570120}
-  m_GameObject: {fileID: 415315012}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 188c61358730b4e259a3aed7fefaa890, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &415315015
 Renderer:
   m_ObjectHideFlags: 0
@@ -15983,7 +15970,6 @@ GameObject:
   - 33: {fileID: 957248132}
   - 64: {fileID: 957248131}
   - 23: {fileID: 957248130}
-  - 114: {fileID: 957248129}
   m_Layer: 0
   m_Name: BG DIRT
   m_TagString: Untagged
@@ -16002,18 +15988,6 @@ Transform:
   m_LocalScale: {x: 11.1537218, y: 5.5768609, z: 7.24991846}
   m_Children: []
   m_Father: {fileID: 252939161}
---- !u!114 &957248129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400000, guid: 52b75f7ca312931448b576f094344129,
-    type: 2}
-  m_PrefabInternal: {fileID: 1169570120}
-  m_GameObject: {fileID: 957248127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 188c61358730b4e259a3aed7fefaa890, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!23 &957248130
 Renderer:
   m_ObjectHideFlags: 0
@@ -17664,7 +17638,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb7511f9713af74180aa8b6d1067973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voterCount: 200
+  voterCount: 150
   voterPrefab: {fileID: 11400002, guid: e734e05d75c542845b43493cc8c42737, type: 2}
 --- !u!4 &1058108189
 Transform:
@@ -19256,7 +19230,9 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: .5
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11400002, guid: 52b75f7ca312931448b576f094344129, type: 2}
+    - {fileID: 11400000, guid: 52b75f7ca312931448b576f094344129, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 52b75f7ca312931448b576f094344129, type: 2}
   m_RootGameObject: {fileID: 252939160}
   m_IsPrefabParent: 0

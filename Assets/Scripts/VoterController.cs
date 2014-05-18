@@ -65,7 +65,7 @@ public class VoterController : MonoBehaviour {
 					else // keep going
 						transform.position = targetPosition;
 					
-					yield return new WaitForSeconds(Random.Range (0.03f,0.08f));
+					yield return new WaitForSeconds(2);
 				break;
 					
 				case VoterState.Cheering:

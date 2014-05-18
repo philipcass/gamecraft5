@@ -108,11 +108,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 966ef6b9c699246419d5378d4a932122, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minWait: .5
+  minWait: 1
   maxWait: 3
   state: 0
-  speed: 3
-  proximityDistance: .0199999996
+  speed: 2
+  proximityDistance: .0500000007
   allegianceIncValue: 1
   allegianceDecValue: .5
   allegianceThreshold: 0
