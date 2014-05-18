@@ -1380,7 +1380,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e94c21bd037f8a147919618704a21141, type: 2}
       propertyPath: percentage
-      value: .300000012
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e94c21bd037f8a147919618704a21141, type: 2}
+      propertyPath: myAllegiance
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e94c21bd037f8a147919618704a21141, type: 2}
@@ -1452,7 +1456,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e94c21bd037f8a147919618704a21141, type: 2}
       propertyPath: percentage
-      value: .600000024
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e94c21bd037f8a147919618704a21141, type: 2}
@@ -1563,7 +1567,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb2d53b64db7d29489878e02e7ad9169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentage: .600000024
+  percentage: 0
   myAllegiance: 0
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
   height: 9
@@ -1601,6 +1605,14 @@ Prefab:
     - target: {fileID: 400002, guid: e94c21bd037f8a147919618704a21141, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e94c21bd037f8a147919618704a21141, type: 2}
+      propertyPath: myAllegiance
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e94c21bd037f8a147919618704a21141, type: 2}
+      propertyPath: percentage
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e94c21bd037f8a147919618704a21141, type: 2}
@@ -1699,8 +1711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb2d53b64db7d29489878e02e7ad9169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentage: .300000012
-  myAllegiance: 0
+  percentage: 0
+  myAllegiance: 2
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
   height: 9
 --- !u!1 &1630511166
@@ -1939,8 +1951,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb2d53b64db7d29489878e02e7ad9169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentage: 1
-  myAllegiance: 0
+  percentage: 0
+  myAllegiance: 3
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
   height: 9
 --- !u!1 &1800716750
@@ -1983,8 +1995,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb2d53b64db7d29489878e02e7ad9169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  percentage: .800000012
-  myAllegiance: 0
+  percentage: 0
+  myAllegiance: 4
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
   height: 9
 --- !u!1 &1850786972
@@ -2104,7 +2116,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: e94c21bd037f8a147919618704a21141, type: 2}
       propertyPath: percentage
-      value: .800000012
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: e94c21bd037f8a147919618704a21141, type: 2}
+      propertyPath: myAllegiance
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e94c21bd037f8a147919618704a21141, type: 2}

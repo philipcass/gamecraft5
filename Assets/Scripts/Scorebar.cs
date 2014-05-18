@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System;
+using System.Collections.Generic;
 
 public class Scorebar : MonoBehaviour {
 	public float percentage;
@@ -13,13 +14,15 @@ public class Scorebar : MonoBehaviour {
 		p = this.transform.position;
 		this.GetComponentInChildren<BannerSelector> ().SetBanner (conf.CrestSprite[Array.IndexOf(conf.Allegiance, this.myAllegiance)]);
 
-		VoterManager vm = FindObjectOfType<VoterManager>();
-		float totalVoters = vm.transform.childCount;
-		foreach(Transform child in vm.transform)
-		{
-			VoterController voter = child.gameObject.GetComponent<VoterController>();
-			percentage = voter.allegiances[myAllegiance] / totalVoters;
+		GameController gc = GameObject.Find("GameController").GetComponent<GameController>();
+
+		foreach( KeyValuePair<Allegiance,float> kv in gc.allegiances){
+
+			if (kv.Key == myAllegiance)
+				percentage = kv.Value;
 		}
+
+
 	}
 	
 	// Update is called once per frame

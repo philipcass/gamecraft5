@@ -23,7 +23,16 @@ public class VoterController : MonoBehaviour {
 	private VoterState previousState;
 	private Vector3 heading;
 
-
+	public Allegiance getMyalli(){
+		Allegiance a = Allegiance.Anarchism;
+		float c = -1;
+		foreach(KeyValuePair<Allegiance,float> kv in allegiances){
+			if(kv.Value > c){
+				a = kv.Key;
+			}
+		}
+		return a;
+	}
 
 
 	// Update is called once per frame
