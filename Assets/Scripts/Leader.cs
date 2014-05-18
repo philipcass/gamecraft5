@@ -21,9 +21,9 @@ public class Leader : MonoBehaviour {
 			Debug.Log(string.Format("{0}_{1}", this.GetComponent<PlayerController> ().player,myAllegiance));
 		}
 		this.GetComponent<SpriteRenderer> ().sprite = conf.Sprite [Array.IndexOf (conf.Allegiance, myAllegiance)];
-		this.GetComponent<PlayerController> ().startAnimation ();
 		this.BaseSpace.setAllegiance(this.myAllegiance);
 		this.transform.position = this.BaseSpace.transform.position;
+		this.GetComponent<PlayerController> ().startAnimation ();
 	}
 	
 	// Update is called once per frame
