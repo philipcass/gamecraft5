@@ -45,6 +45,12 @@ MonoBehaviour:
   - {fileID: 21300006, guid: 8758d120f88de444bb54c764b382f306, type: 3}
   - {fileID: 21300002, guid: 8758d120f88de444bb54c764b382f306, type: 3}
   - {fileID: 21300000, guid: 8758d120f88de444bb54c764b382f306, type: 3}
+  CrestSprite:
+  - {fileID: 21300016, guid: ae34da94f314d2f4682b9077b731cc80, type: 3}
+  - {fileID: 21300020, guid: ae34da94f314d2f4682b9077b731cc80, type: 3}
+  - {fileID: 21300018, guid: ae34da94f314d2f4682b9077b731cc80, type: 3}
+  - {fileID: 21300014, guid: ae34da94f314d2f4682b9077b731cc80, type: 3}
+  - {fileID: 21300012, guid: ae34da94f314d2f4682b9077b731cc80, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

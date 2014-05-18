@@ -12,8 +12,11 @@ public class PlayerController : MonoBehaviour
 
 	CircleCollider2D influence;
 
+	Leader leaderController;
+
 	// START - Use this for initialization
 	void Start () {
+		this.leaderController = this.GetComponent<Leader> ();
 		XAxis = "L_XAxis_" + player;
 		YAxis = "L_YAxis_" + player;
 		Shout = "A_" + player;
@@ -26,13 +29,14 @@ public class PlayerController : MonoBehaviour
 		float x = Input.GetAxis(XAxis) * Time.smoothDeltaTime * speed;
 		float y = -Input.GetAxis(YAxis) * Time.smoothDeltaTime * speed;
 		transform.Translate(x,y,0,Space.Self);
-		if (Input.GetButtonDown (Shout) && !isInfluencing) {
+		if (Input.GetButtonDown (Shout) && !isInfluencing && leaderController.power > leaderController.powerUse) {
 			StartCoroutine (Influence ());
 		}
 	}
 
 	bool isInfluencing = false;
 	IEnumerator Influence(){
+		leaderController.power -= leaderController.powerUse;
 		isInfluencing = true;
 		influence.enabled = true;
 		yield return new WaitForSeconds(0.001f);

@@ -3,30 +3,25 @@ using System.Collections;
 
 public class UIController : MonoBehaviour {
 
-	public GUIStyle empty;
-	public GUIStyle full;
+	public float progress = 0;
+	public Vector2 pos = new Vector2(20,40);
+	Vector2 size = new Vector2(60,20);
+	public Texture2D progressBarEmpty;
+	public Texture2D progressBarFull;
 
-	public Texture2D emptyTex;
-	public Texture2D fullTex;
-
-	public float displayAmount;
-
-	public Vector2 pos;
-	private Vector2 size = new Vector2(250,50);
-
-
-
+	public bool left;
+	public bool bottom;
+	
 	void OnGUI()
 	{
-		//draw the background:
-		GUI.BeginGroup(new Rect(pos.x, pos.y , size.x, size.y), emptyTex, empty);
-		GUI.Box(new Rect(pos.x, pos.y, size.x, size.y), fullTex, full);
-		
-		//draw the filled-in part:
-		GUI.BeginGroup( new Rect(0, 0, size.x * displayAmount, size.y));
-		GUI.Box( new Rect(0, 0, size.x, size.y), fullTex, full );
-		
-		GUI.EndGroup();
-		GUI.EndGroup();
+		float posX = left ? pos.x + Screen.width-100 : pos.x;
+		float posY = bottom ? pos.y + Screen.height-100 : pos.y;
+
+		GUI.DrawTexture(new Rect(posX+4, posY+4, size.x * Mathf.Clamp01(progress)-6, size.y/2), progressBarFull);
+		GUI.DrawTexture(new Rect(posX, posY, size.x, size.y), progressBarEmpty);
+	} 
+	
+	void Update()
+	{
 	}
 }
