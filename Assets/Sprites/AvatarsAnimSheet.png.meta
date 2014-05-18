@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 945cb323b57879041a78785a10047508
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: 0
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: AvatarsAnimSheet_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 106
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 106
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 106
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_3
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 106
+        width: 6
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 106
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_5
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 106
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_6
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 106
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 106
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_8
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 104
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_9
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 122
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_10
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 104
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_11
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 104
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 80
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_13
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 80
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_14
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 80
+        width: 14
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_15
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 80
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_16
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 78
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_17
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 78
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_18
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 78
+        width: 8
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 78
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 53
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_21
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 53
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_22
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 53
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_23
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 53
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_24
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 52
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_25
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 52
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_26
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 52
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_27
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 52
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_28
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 51
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_29
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 52
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_30
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 52
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_31
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 52
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_32
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 25
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_33
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 25
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_34
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 25
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_35
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 25
+        width: 8
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_36
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 25
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_37
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 24
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_38
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 25
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_39
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 24
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_41
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 2
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_42
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 2
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_43
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2
+        width: 5
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_44
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 2
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_45
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 2
+        width: 4
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_46
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: AvatarsAnimSheet_47
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2
+        width: 4
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+  spritePackingTag: 
+  userData: 
