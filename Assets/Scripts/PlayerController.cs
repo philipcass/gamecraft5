@@ -86,8 +86,8 @@ public class PlayerController : MonoBehaviour
 			_walkani = "Communist_Walk";
 			break;
 		case(Allegiance.Facism):
-			_idleani = "Facist_Idle";
-			_walkani = "Facist_Walk";
+			_idleani = "Fascist_Idle";
+			_walkani = "Fascist_Walk";
 			break;
 		case(Allegiance.Theocracy):
 			_idleani = "Theocrat_Idle";
