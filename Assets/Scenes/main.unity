@@ -2937,7 +2937,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: 0
-  pos: {x: 20, y: 40}
+  pos: {x: -45, y: 32}
+  size: {x: 120, y: 30}
   progressBarEmpty: {fileID: 2800000, guid: e38e2c7d4412c5a45a33a1fc2e39922f, type: 3}
   progressBarFull: {fileID: 2800000, guid: c810e9068ac287442b465e0e16ddee2b, type: 3}
   left: 1
@@ -6830,7 +6831,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: 0
-  pos: {x: 20, y: 40}
+  pos: {x: 25, y: 32}
+  size: {x: 120, y: 30}
   progressBarEmpty: {fileID: 2800000, guid: e38e2c7d4412c5a45a33a1fc2e39922f, type: 3}
   progressBarFull: {fileID: 2800000, guid: c810e9068ac287442b465e0e16ddee2b, type: 3}
   left: 0
@@ -7755,7 +7757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 905273879}
-  LevelTimer: 45
+  LevelTimer: 200
 --- !u!1 &470419392
 GameObject:
   m_ObjectHideFlags: 0
@@ -11833,6 +11835,18 @@ Prefab:
       propertyPath: powerGain
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: size.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: size.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: pos.x
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 21200002, guid: def23413b144cff499a151ccf24d36d9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
@@ -15698,7 +15712,7 @@ GUIText:
   m_Text: 
   m_Anchor: 4
   m_Alignment: 1
-  m_PixelOffset: {x: -2.3900001, y: 250}
+  m_PixelOffset: {x: -2.3900001, y: 240}
   m_LineSpacing: 1
   m_TabSize: 4
   m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
@@ -20133,6 +20147,22 @@ Prefab:
       propertyPath: powerGain
       value: .5
       objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: size.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: size.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: pos.x
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: pos.y
+      value: 40
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 21200002, guid: def23413b144cff499a151ccf24d36d9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
@@ -22927,6 +22957,22 @@ Prefab:
     - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: powerGain
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: pos.x
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: pos.y
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: size.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: size.y
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
@@ -32583,7 +32629,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: 0
-  pos: {x: 20, y: 40}
+  pos: {x: 25, y: 40}
+  size: {x: 120, y: 30}
   progressBarEmpty: {fileID: 2800000, guid: e38e2c7d4412c5a45a33a1fc2e39922f, type: 3}
   progressBarFull: {fileID: 2800000, guid: c810e9068ac287442b465e0e16ddee2b, type: 3}
   left: 0
@@ -33572,7 +33619,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   progress: 0
-  pos: {x: 20, y: 40}
+  pos: {x: -45, y: 40}
+  size: {x: 120, y: 30}
   progressBarEmpty: {fileID: 2800000, guid: e38e2c7d4412c5a45a33a1fc2e39922f, type: 3}
   progressBarFull: {fileID: 2800000, guid: c810e9068ac287442b465e0e16ddee2b, type: 3}
   left: 1
@@ -34011,6 +34059,22 @@ Prefab:
     - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: powerGain
       value: .5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: pos.x
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: size.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: size.x
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: pos.y
+      value: 32
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 21200002, guid: def23413b144cff499a151ccf24d36d9, type: 2}

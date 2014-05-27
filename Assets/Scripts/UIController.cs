@@ -5,7 +5,7 @@ public class UIController : MonoBehaviour {
 
 	public float progress = 0;
 	public Vector2 pos = new Vector2(20,40);
-	Vector2 size = new Vector2(60,20);
+	public Vector2 size = new Vector2(60,20);
 	public Texture2D progressBarEmpty;
 	public Texture2D progressBarFull;
 
