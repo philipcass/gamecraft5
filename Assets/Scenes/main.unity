@@ -3010,7 +3010,7 @@ MonoBehaviour:
   ui: {fileID: 0}
   power: 0
   powerUse: .100000001
-  powerGain: .00999999978
+  powerGain: .5
 --- !u!61 &193772646
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6793,7 +6793,7 @@ MonoBehaviour:
   ui: {fileID: 0}
   power: 0
   powerUse: .100000001
-  powerGain: .00999999978
+  powerGain: .5
 --- !u!61 &414303971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -11828,6 +11828,10 @@ Prefab:
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: bottom
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: powerGain
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 21200002, guid: def23413b144cff499a151ccf24d36d9, type: 2}
@@ -20125,6 +20129,10 @@ Prefab:
       propertyPath: bottom
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: powerGain
+      value: .5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 21200002, guid: def23413b144cff499a151ccf24d36d9, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
@@ -22915,6 +22923,10 @@ Prefab:
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: left
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: powerGain
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
@@ -32644,7 +32656,7 @@ MonoBehaviour:
   ui: {fileID: 0}
   power: 0
   powerUse: .100000001
-  powerGain: .00999999978
+  powerGain: .5
 --- !u!61 &1982072690
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33485,7 +33497,7 @@ MonoBehaviour:
   ui: {fileID: 0}
   power: 0
   powerUse: .100000001
-  powerGain: .00999999978
+  powerGain: .5
 --- !u!61 &2020181032
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -33995,6 +34007,10 @@ Prefab:
     - target: {fileID: 11400004, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: bottom
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
+      propertyPath: powerGain
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 21200002, guid: def23413b144cff499a151ccf24d36d9, type: 2}
