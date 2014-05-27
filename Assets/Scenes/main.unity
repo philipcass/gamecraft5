@@ -17962,7 +17962,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Radius: 10
+  m_Radius: 13
   m_Center: {x: 0, y: 0}
 --- !u!114 &1058108188
 MonoBehaviour:
@@ -17975,7 +17975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fb7511f9713af74180aa8b6d1067973, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voterCount: 150
+  voterCount: 300
   voterPrefab: {fileID: 11400002, guid: e734e05d75c542845b43493cc8c42737, type: 2}
 --- !u!4 &1058108189
 Transform:

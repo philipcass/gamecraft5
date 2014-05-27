@@ -37,7 +37,7 @@ public class VoterManager : MonoBehaviour {
 	Vector2 pointInsideCircle(Vector2 circlePos, float radiusIn){
 		Vector2 newPoint;
 		float angle = Random.Range(0.0F, 1.0F) * (Mathf.PI * 2);
-		float radius = Random.Range(0.0F, 1.0F) * radiusIn;
+		float radius = Random.Range(0.2F, 1.0F) * radiusIn;
 		newPoint.x = circlePos.x + radius * Mathf.Cos(angle);
 		newPoint.y = circlePos.y + radius * Mathf.Sin(angle);
 		return (newPoint);
