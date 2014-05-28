@@ -43,7 +43,7 @@ public class Selector : MonoBehaviour {
 			playerText[player].transform.position = Elements[pp].transform.position + new Vector3(0,2,0);
 		}
 
-		if (ready.Count == 1) {
+		if (ready.Count == 4) {
 			Settings s = GameObject.Find("Settings").GetComponent<Settings>();
 			for(int player = 0; player < 4; player++) {
 				int pp = playerPos[player];
