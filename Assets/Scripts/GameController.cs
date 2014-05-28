@@ -36,6 +36,8 @@ public class GameController : MonoBehaviour {
 	void Update () {
 		if(Input.GetKeyUp(KeyCode.R)){
 			Destroy(this);
+			Destroy(FindObjectOfType<VoterManager>());
+
 			Application.LoadLevel("char_select");
 		}
 	}

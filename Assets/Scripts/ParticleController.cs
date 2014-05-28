@@ -3,6 +3,8 @@ using System.Collections;
 
 public class ParticleController : MonoBehaviour {
 
+	public float intensityIncrement = 20f;
+
 	private float intensity;
 	private float previousIntensity;
 	private Allegiance allegance;
@@ -15,6 +17,7 @@ public class ParticleController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		particleSystem.renderer.sortingLayerName = "Banner";
 
 		if (previousIntensity != intensity) // on trigger on change
 		{
@@ -22,11 +25,19 @@ public class ParticleController : MonoBehaviour {
 			switch (allegance)
 			{
 				case Allegiance.Communism:
-					
-					particleSystem.renderer.material.color = Color.red;
+					particleSystem.startColor = Color.red;
 				break;
 				case Allegiance.Capitalism:
-					particleSystem.renderer.material.color = Color.yellow;
+					particleSystem.startColor = Color.blue;
+				break;
+				case Allegiance.Facism:
+					particleSystem.startColor = Color.black;
+				break;
+				case Allegiance.Theocracy:
+					particleSystem.startColor = Color.white;
+				break;
+				case Allegiance.Anarchism:
+					particleSystem.startColor = Color.yellow;
 				break;
 			}
 			previousIntensity = intensity;
@@ -37,15 +48,15 @@ public class ParticleController : MonoBehaviour {
 	{
 		if (allIn == allegance)
 		{
-			intensity+=5f;
+			intensity+=intensityIncrement;
 		}
 		else
 		{
-			intensity-=5f;
+			intensity-=intensityIncrement;
 			if (intensity < 0)
 			{
 				allegance = allIn;
-				intensity = 5;
+				intensity = intensityIncrement;
 			}
 		}
 	}
