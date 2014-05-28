@@ -24,8 +24,8 @@ public class VoterController : MonoBehaviour {
 	private Vector3 heading;
 
 	public Allegiance getMyalli(){
-		Allegiance a = Allegiance.Anarchism;
-		float c = -1;
+		Allegiance a = Allegiance.None;
+		float c = 0;
 		foreach(KeyValuePair<Allegiance,float> kv in allegiances){
 			if(kv.Value > c){
 				a = kv.Key;

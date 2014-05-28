@@ -18,7 +18,7 @@ public class Leader : MonoBehaviour {
 
 		if(GameObject.Find ("Settings") != null){
 			myAllegiance = GameObject.Find ("Settings").GetComponent<Settings> ().playerAllegiances [this.GetComponent<PlayerController> ().player-1];
-			Debug.Log(string.Format("{0}_{1}", this.GetComponent<PlayerController> ().player,myAllegiance));
+			//Debug.Log(string.Format("{0}_{1}", this.GetComponent<PlayerController> ().player,myAllegiance));
 		}
 		this.GetComponent<SpriteRenderer> ().sprite = conf.Sprite [Array.IndexOf (conf.Allegiance, myAllegiance)];
 		this.BaseSpace.setAllegiance(this.myAllegiance);

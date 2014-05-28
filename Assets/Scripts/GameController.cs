@@ -26,6 +26,8 @@ public class GameController : MonoBehaviour {
 				if (LevelTimer == 0)
 				{	
 					SaveScores();
+					timerText.enabled = false;
+					Destroy(FindObjectOfType<VoterManager>());
 					Application.LoadLevel ("Score");
 				}
 			}

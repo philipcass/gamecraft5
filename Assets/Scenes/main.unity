@@ -7757,7 +7757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 905273879}
-  LevelTimer: 200
+  LevelTimer: 5
 --- !u!1 &470419392
 GameObject:
   m_ObjectHideFlags: 0
@@ -11817,7 +11817,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: myAllegiance
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 11400000, guid: def23413b144cff499a151ccf24d36d9, type: 2}
       propertyPath: BaseSpace
@@ -33738,7 +33738,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   conf: {fileID: 11400000, guid: 32424d2e4b7f6534cbf8572287da0cf6, type: 2}
-  myAllegiance: 3
+  myAllegiance: 4
   BaseSpace: {fileID: 2048145683}
   ui: {fileID: 0}
   power: 0

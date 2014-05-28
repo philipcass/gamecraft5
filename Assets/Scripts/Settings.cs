@@ -6,7 +6,8 @@ public enum Allegiance{
 	Anarchism,
 	Capitalism,
 	Theocracy,
-	Facism
+	Facism,
+	None
 }
 
 public enum VoterState{
